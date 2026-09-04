@@ -2,3 +2,6 @@ Just a sample file
 d2 commit
 d3
 d4
+d5
+d6
+d7
