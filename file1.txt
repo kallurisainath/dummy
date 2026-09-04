@@ -1,2 +1,3 @@
 Just a sample file
 dummy commit
+dummy commit 2 from feature/branch1
