@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <style>
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #0f172a, #1d4ed8);
+        font-family: Arial, sans-serif;
+      }
+
+      .signin-card {
+        width: 100%;
+        max-width: 380px;
+        background: #ffffff;
+        padding: 32px 28px;
+        border-radius: 16px;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
+      }
+
+      .brand {
+        text-align: center;
+        margin-bottom: 24px;
+        color: #1e293b;
+      }
+
+      .brand h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      .brand p {
+        margin: 8px 0 0;
+        color: #64748b;
+        font-size: 0.95rem;
+      }
+
+      .input-group {
+        margin-bottom: 18px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        color: #334155;
+        font-weight: 600;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      input:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 14px 0 22px;
+        font-size: 0.9rem;
+        color: #475569;
+      }
+
+      .checkbox-wrap {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .checkbox-wrap input {
+        width: auto;
+        margin: 0;
+      }
+
+      .row a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+
+      button {
+        width: 100%;
+        padding: 13px 16px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+      }
+
+      .signup {
+        text-align: center;
+        margin-top: 18px;
+        color: #64748b;
+        font-size: 0.95rem;
+      }
+
+      .signup a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signin-card">
+      <div class="brand">
+        <h1>Welcome back</h1>
+        <p>Sign in to continue</p>
+      </div>
+
+      <form>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="name@example.com" required />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required />
+        </div>
+
+        <div class="row">
+          <label class="checkbox-wrap">
+            <input type="checkbox" />
+            <span>Remember me</span>
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit">Sign In</button>
+      </form>
+
+      <div class="signup">
+        New here? <a href="#">Create an account</a>
+      </div>
+    </div>
+  </body>
+</html>
