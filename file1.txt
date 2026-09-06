@@ -2,6 +2,6 @@ Just a sample file
 this is another text
 Just a sample file
 this is mple file
-        this is another te
+        this is another 
         another
 
